@@ -50,5 +50,36 @@ console.log(logInUser("vhi"));
 
 console.log(logInUser()); // undefined
 
+// ... rest operator {spread operator}
+function calculatePrice(val1, val2, ...num1){
+    return num1
+}
 
+console.log(calculatePrice(200, 400, 500, 2000))
+
+const user = {
+    username: "shiv",
+    price: 199
+}
+
+function handleObject(anyObject){
+
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+
+}
+
+// handleObject(user)
+
+handleObject({
+        username:"hitesh",
+        price: 99
+})
+
+const myNewArray = [3, 4, 4]
+
+function returnSecondValue(getarray){
+    return getarray[2]
+}
+
+console.log(myNewArray);
 
